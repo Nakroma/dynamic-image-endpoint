@@ -1,0 +1,22 @@
+{
+  "name": "dynamic-cdn",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Small express server to serve static images with dynamic sizes.",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "files": ["dist"],
+  "keywords": [],
+  "author": "Nakroma",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "typescript": "^4.8.3"
+  }
+}
