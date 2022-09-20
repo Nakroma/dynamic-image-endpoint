@@ -4,6 +4,7 @@
     "module": "esnext",
     "declaration": true,
     "esModuleInterop": true,
+    "moduleResolution": "Node",
     "strict": true,
     "outDir": "dist"
   },
