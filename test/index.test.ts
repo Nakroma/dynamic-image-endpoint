@@ -7,13 +7,14 @@ import handler from '../src/index';
 
 let app = {} as express.Application;
 let server = {} as http.Server;
+
 const BASE_PATH = './test';
 const TEST_FILE = 'test.png';
 
 // Hooks
 beforeAll((done) => {
     // Create test image
-    sharp({
+    void sharp({
         create: {
             width: 200,
             height: 100,
@@ -26,13 +27,14 @@ beforeAll((done) => {
         .then(() => {
             // Prepare express app
             app = express();
+            // eslint-disable-next-line @typescript-eslint/no-misused-promises
             app.get('*', handler(BASE_PATH));
             server = app.listen(3000, done);
         });
 })
-afterAll(async () => {
+afterAll(() => {
     // Cleanup
-    await server.close();
+    server.close();
     fs.rmSync(path.join(BASE_PATH, TEST_FILE));
 })
 
