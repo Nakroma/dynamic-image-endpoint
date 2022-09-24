@@ -18,8 +18,8 @@ export default function handler(basePath: string) {
         const fileName = fileSplit.join('.');
 
         // File paths for original and (possibly) new file
-        const originalFilePath = path.join(basePath, ...filePath, file);
-        const outputFilePath = path.join(basePath, ...filePath, fileName);
+        const originalFilePath = path.resolve(basePath, ...filePath, file);
+        const outputFilePath = path.resolve(basePath, ...filePath, fileName);
 
         try {
             // Check if file exists and send if it does
