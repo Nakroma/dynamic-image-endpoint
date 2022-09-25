@@ -34,4 +34,7 @@ yarn build
 
 # Test project
 yarn test
+
+# Lint project
+yarn lint
 ```
