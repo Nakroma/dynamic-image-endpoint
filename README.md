@@ -1,4 +1,5 @@
 ## Dynamic Image Endpoint
+![npm](https://img.shields.io/npm/v/dynamic-image-endpoint)
 
 Small [Express](https://github.com/expressjs/express) endpoint to serve static images with dynamic sizes.
 Simply plug the provided handler function into an Express app endpoint and you're good to go.
