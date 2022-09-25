@@ -1,8 +1,8 @@
 {
-  "name": "dynamic-cdn",
+  "name": "dynamic-image-endpoint",
   "type": "module",
   "version": "1.0.0",
-  "description": "Small express server to serve static images with dynamic sizes.",
+  "description": "Small Express endpoint to serve static images with dynamic sizes.",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -13,7 +13,12 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "express",
+    "endpoint",
+    "image",
+    "cdn"
+  ],
   "author": "Nakroma",
   "license": "MIT",
   "devDependencies": {
