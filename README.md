@@ -25,7 +25,6 @@ e.g. `localhost:3000/image.jpg?width=200` will serve `path/to/images/image.jpg` 
 the height will be calculated automatically. The resulting image will be saved on disk.
 
 ### Development
-#### Setup
 ```bash
 # Setup
 yarn
