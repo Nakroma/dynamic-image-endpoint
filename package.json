@@ -1,7 +1,7 @@
 {
   "name": "dynamic-image-endpoint",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small Express endpoint to serve static images with dynamic sizes.",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
