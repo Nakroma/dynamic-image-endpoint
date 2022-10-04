@@ -8,7 +8,7 @@ export default function handler(basePath: string) {
     return async (req: Request, res: Response) => {
         // Base vars
         const width = (Array.isArray(req.query.width) ? req.query.width[0] : req.query.width) as string | undefined;
-        const filePath = req.path.split('/');
+        const filePath = decodeURIComponent(req.path).split('/');
         const file = filePath.pop();
         if (!file) return res.status(400).send('Invalid request path.');
 
